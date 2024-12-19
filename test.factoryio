@@ -1,0 +1,607 @@
+﻿<FactoryIO Type="MySavedScene" Year="2024" Month="12" Day="15" Hour="15" Minute="17" Second="43" Version="2.5.7" GUID="00000000-0000-0000-0000-000000000000">
+  <Description Data="" />
+  <Camera>
+    <CameraPosition Name="Current" Type="FPSCamera">
+      <Data>
+        <CameraPosition X="31.35271" Y="1.727311" Z="19.60321" />
+        <CameraRotation X="-0.08278379" Y="-0.4270859" Z="0.03930363" W="-0.8995553" />
+      </Data>
+    </CameraPosition>
+  </Camera>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="TwoAxisPickNPlace" Key="a449b0ab-5fcb-4679-91f5-a01d90cbd9f5">
+      <Position X="281" Y="10" Z="173" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_TwoAxisPickNPlace_OM_Binary_NAME">
+      <GroupIO Description="Picker">
+        <BinaryInput Name="Two-Axis Pick &amp; Place 0 (Moving Z)" Address="0" Key="ab6a4118-6e6d-4ffa-98dd-6bc3dfde073b" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 Z" Address="0" Key="ceeaed74-f4be-4ad5-a5b0-a347deee067d" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Arm">
+        <BinaryInput Name="Two-Axis Pick &amp; Place 0 (Moving X)" Address="1" Key="1fa11b23-148c-4560-842d-5baf85a3c830" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 X" Address="1" Key="63cf2f7b-8cfd-4be6-8ad2-da7fb9b1f460" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Gripper">
+        <BinaryInput Name="Two-Axis Pick &amp; Place 0 (Detected)" Address="2" Key="116ce753-36ef-41cf-a84a-87dfa0a75587" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 (Grab)" Address="2" Key="17954080-823c-4e44-9eb3-33e885f5cb83" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="ArmRotate">
+        <BinaryInput Name="Two-Axis Pick &amp; Place 0 (Rotating)" Address="3" Key="c8a8ba8b-4eb9-4837-85e0-abe6ccd9103f" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="True" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 Rotate CW" Address="3" Key="31c5dfcc-4e22-475e-9231-2b19d6fb37a7" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="True" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 Rotate CCW" Address="4" Key="42c28dbf-7f98-468d-88ed-d5c0da8b570e" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="GripperRotate">
+        <BinaryInput Name="Two-Axis Pick &amp; Place 0 (Gripper Rotating)" Address="4" Key="3c1898d2-4251-44a4-a059-acf9613ddb76" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 Gripper CW" Address="5" Key="8b1166d4-3f54-4e35-84ac-17a2ee5daed2" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Two-Axis Pick &amp; Place 0 Gripper CCW" Address="6" Key="f63e8785-3dc5-4326-9718-ab84ca055177" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="BeltConveyor2M" Key="f10c448d-8d32-450f-b716-578e1ae056c3">
+      <Position X="373" Y="3" Z="173" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="-1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="1" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_BeltConveyor_OM_SingleBinary_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="Belt Conveyor (2m) 0" Address="8" Key="b65318dc-507d-4dad-9dcf-8d3c67060c3d" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+    <Encoder Enabled="False" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="BeltConveyor2M" Key="5e160fb9-54cc-444f-9926-62e1b637ec41">
+      <Position X="280" Y="3" Z="200" />
+      <Rotation X="0" Y="-1" Z="0" W="0" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="-1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="-1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="1" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_BeltConveyor_OM_SingleBinary_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="Belt Conveyor (2m) 1" Address="7" Key="2a89af11-e72b-4042-b31e-5c74ddb9572c" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+    <Encoder Enabled="False" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="BeltConveyor2M" Key="62438729-4cf0-4298-be46-5bbc35e9a139">
+      <Position X="372" Y="3" Z="115" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="-1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="1" />
+    </Proxy>
+    <ComponentIO Index="2" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_BeltConveyor_OM_SingleBinary_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="Belt Conveyor (2m) 2" Address="9" Key="d4d733c7-c713-418d-b033-b331e18fc858" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+    <Encoder Enabled="False" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="StackableBox" Key="c30e80a2-e9c9-4406-90d3-b9dd4e780b5c">
+      <Position X="304" Y="1" Z="166" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="-1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="1" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="ConveyorScale" Key="30143b6b-46f1-4799-8ec8-5a78fb67b5d2">
+      <Position X="280" Y="1" Z="163" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="-1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="1" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_ConveyorScale_OM_Default20_NAME">
+      <GroupIO Description="Rotate">
+        <BinaryOutput Name="Conveyor Scale 0 (+)" Address="10" Key="30a29d03-4728-4bee-badc-894ed31ed6a3" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Reverse">
+        <BinaryOutput Name="Conveyor Scale 0 (-)" Address="11" Key="d52822ef-968f-496b-a09b-82c6f1dd17f0" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Weight">
+        <AnalogueInput Name="Conveyor Scale 0 Weight (V)" Address="0" Key="9c62e9f4-f2ca-4564-bf53-d61c830f8bf2" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="10" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="MachiningCenter" Key="e8233fe4-66a3-4dec-adad-5b790e5f51f7">
+      <Position X="343" Y="9" Z="184" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="-0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="-1" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_OM_Default_NAME">
+      <GroupIO Description="produceLids">
+        <BinaryOutput Name="Machining Center 0 (Produce Lids)" Address="12" Key="662747dc-8384-40d9-87eb-881dc9cc7bc6" OpenCircuit="False" ShortCircuit="False" UseForcedValue="True" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="start">
+        <BinaryOutput Name="Machining Center 0 (Start)" Address="13" Key="247ad496-4e2f-4569-bc97-1d059e12069f" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="stop">
+        <BinaryOutput Name="Machining Center 0 (Stop)" Address="14" Key="64d896be-ce59-4c81-b202-718c1570d8f7" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reset">
+        <BinaryOutput Name="Machining Center 0 (Reset)" Address="15" Key="0780fc21-9070-4f99-95cb-d40f2c277ecd" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="isBusy">
+        <BinaryInput Name="Machining Center 0 (Is Busy)" Address="5" Key="20dfcba1-2dc5-405b-8c16-2037e0f1d226" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="hasError">
+        <BinaryInput Name="Machining Center 0 (Has Error)" Address="6" Key="f9645d67-5407-46d8-bb0c-ec40fb345223" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="door">
+        <BinaryInput Name="Machining Center 0 (Opened)" Address="7" Key="e183f222-3b30-4ee1-9a7f-8ad745922de6" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="progress">
+        <IntInput Name="Machining Center 0 (Progress)" Address="0" Key="6509856e-ca2b-467f-b90f-9223fa8f1866" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="0" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="ElectricSwitchboard" Key="943b2768-0dc4-41bd-82af-1712d08e0231">
+      <Position X="340" Y="11" Z="161" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="-0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="-1" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="LightIndicator" Key="8260aa22-6f94-45e4-a8d5-2cf05b189fd8">
+      <Position X="339" Y="12" Z="159" />
+      <Rotation X="0" Y="0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="-1" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" Color="3" />
+    <OperatingMode Description="$C_OM_Default_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="CUT" Address="16" Key="e653f9ad-2a8d-4ce6-998b-e9020a2d0e2e" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="LightIndicator" Key="65179923-3786-452c-81ad-eb1cccf061ff">
+      <Position X="340" Y="12" Z="159" />
+      <Rotation X="0" Y="0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="-1" />
+    </Proxy>
+    <ComponentIO Index="1" CurrentOperatingMode="0" Color="5" />
+    <OperatingMode Description="$C_OM_Default_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="SEPARATE" Address="17" Key="24b49465-4abe-435b-ac42-f6ad702ab8d8" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="LightIndicator" Key="dcf9b4dd-9a0e-40c9-a525-a49ada2c8fde">
+      <Position X="341" Y="12" Z="159" />
+      <Rotation X="0" Y="0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="-1" />
+    </Proxy>
+    <ComponentIO Index="2" CurrentOperatingMode="0" Color="4" />
+    <OperatingMode Description="$C_OM_Default_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="GRIND" Address="18" Key="f81ff439-0d57-4dcd-a2dc-c0203f11e453" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="Turntable" Key="ec2150c8-6a67-46c5-829e-2fd80d3f77db">
+      <Position X="280" Y="2" Z="184" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_Turntable_OM_Monostable_NAME">
+      <GroupIO Description="roll">
+        <BinaryOutput Name="Turntable 0 Roll (+)" Address="19" Key="3573f6f6-f99b-43ae-a20c-80c70a886290" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reverse">
+        <BinaryOutput Name="Turntable 0 Roll (-)" Address="20" Key="ca480081-6d39-4f02-aa63-867638242595" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="turn">
+        <BinaryOutput Name="Turntable 0 Turn" Address="21" Key="95dcbe4e-e2da-49f9-bbe5-3bbbf9f7dc53" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="limitSwitch0">
+        <BinaryInput Name="Turntable 0 (Limit 0)" Address="8" Key="03691caf-f46f-4ab0-88b4-168a45f651f3" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="limitSwitch90">
+        <BinaryInput Name="Turntable 0 (Limit 90)" Address="9" Key="3ff9b691-1e95-4df0-97e6-b22dd22977dc" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="frontLimit">
+        <BinaryInput Name="Turntable 0 (Front Limit)" Address="10" Key="beb6f1d2-4aeb-4fe3-b00e-962748e56be9" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="backLimit">
+        <BinaryInput Name="Turntable 0 (Back Limit)" Address="11" Key="a3593826-2d8a-4700-bcb1-b66520a2c5a6" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="Turntable" Key="ae775b5d-967f-4864-9957-7e68355cdf0e">
+      <Position X="263" Y="2" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="1" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_Turntable_OM_Monostable_NAME">
+      <GroupIO Description="roll">
+        <BinaryOutput Name="Turntable 1 Roll (+)" Address="22" Key="e3fde494-c5b5-44f5-a363-03bf3d9c44ad" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reverse">
+        <BinaryOutput Name="Turntable 1 Roll (-)" Address="23" Key="4ae1caf4-4cd3-48db-a18d-7c13f4a4cd06" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="turn">
+        <BinaryOutput Name="Turntable 1 Turn" Address="24" Key="8944f5c3-73b5-4124-8e7b-ba18096e5b7f" OpenCircuit="True" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="limitSwitch0">
+        <BinaryInput Name="Turntable 1 (Limit 0)" Address="12" Key="74a234d8-df3d-40e7-a2fe-638df05c2f13" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="limitSwitch90">
+        <BinaryInput Name="Turntable 1 (Limit 90)" Address="13" Key="6b2a7f42-92cc-4a4a-aa4d-d7e0521eb9df" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="frontLimit">
+        <BinaryInput Name="Turntable 1 (Front Limit)" Address="14" Key="a4f566a3-11f5-4f20-9760-487cd80c6898" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="backLimit">
+        <BinaryInput Name="Turntable 1 (Back Limit)" Address="15" Key="82d603af-1506-4e8e-aa90-c62f689e8e27" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="SquarePallet" Key="36027c57-dafa-4ff3-9a24-f7070c5d7bad">
+      <Position X="263" Y="5" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="c5586e57-466b-42d5-997d-8a56cdd87b0a">
+    <Proxy PrefabName="RawMaterialBlue" Key="6f765f58-de5c-4ad9-b918-97eed87e446a">
+      <Position X="265" Y="6" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="c5586e57-466b-42d5-997d-8a56cdd87b0a">
+    <Proxy PrefabName="RawMaterialBlue" Key="245849fe-5e3e-4935-8b55-e59ec229ac1e">
+      <Position X="265" Y="7" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="d74f00cf-2972-41aa-abef-b26412072443">
+    <Proxy PrefabName="RawMaterialBlue" Key="c3fc7191-91d4-452e-90c3-1262968e550f">
+      <Position X="261" Y="6" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="d74f00cf-2972-41aa-abef-b26412072443">
+    <Proxy PrefabName="RawMaterialBlue" Key="8a872c6a-8efb-4ec6-8df3-7c9cbb185140">
+      <Position X="261" Y="7" Z="171" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="BeltConveyor4M" Key="a1055bc8-9f0c-4585-9237-cf7a4920fa9f">
+      <Position X="303" Y="3" Z="173" />
+      <Rotation X="0" Y="-0.7071068" Z="0" W="0.7071068" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="-1" Y="0" Z="0" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="0" Y="0" Z="1" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_BeltConveyor_OM_SingleBinary_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="Belt Conveyor (4m) 0" Address="25" Key="d0f9d9f5-136b-47be-8aa5-a3862d08af1b" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+    <Encoder Enabled="False" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="Pusher" Key="efbc41c6-c502-415c-974b-ee115cefe5e0">
+      <Position X="304" Y="6" Z="180" />
+      <Rotation X="0" Y="-1" Z="0" W="0" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="-1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="-1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_Pusher_OM_Monostable_NAME">
+      <GroupIO Description="Default">
+        <BinaryOutput Name="Pusher 0" Address="26" Key="f89c713c-038d-4b3b-bbd7-62fb4c030d65" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Front">
+        <BinaryInput Name="Pusher 0 (Front Limit)" Address="16" Key="604b2e2e-1c4d-40d2-8606-5478695c16b9" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Back">
+        <BinaryInput Name="Pusher 0 (Back Limit)" Address="17" Key="f42024ca-95dc-4b28-a7c7-f25da0c97f80" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="RawMaterialGreen" Key="649cc850-5723-47cb-8954-7fae783b95d4">
+      <Position X="298" Y="8" Z="173" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="-1" CurrentOperatingMode="0" />
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="Tank" Key="458cf2a2-b4ac-4ecc-8c9a-db7fbb3d8741">
+      <Position X="307" Y="18" Z="226" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_Tank_OM_Analog_NAME">
+      <GroupIO Description="LevelMeter">
+        <AnalogueInput Name="Tank 0 (Level Meter)" Address="1" Key="beec8c79-aab3-4864-899a-26236bd826b2" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="0" />
+      </GroupIO>
+      <GroupIO Description="FlowMeter">
+        <AnalogueInput Name="Tank 0 (Flow Meter)" Address="2" Key="d7f9ffe3-126b-4ce1-8cf8-f852e86b65d8" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="0" />
+      </GroupIO>
+      <GroupIO Description="FillValve">
+        <AnalogueOutput Name="Tank 0 (Fill Valve)" Address="0" Key="89c1b371-41c4-45cc-9af5-daa0de40ceae" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="0" />
+      </GroupIO>
+      <GroupIO Description="DischargeValve">
+        <AnalogueOutput Name="Tank 0 (Discharge Valve)" Address="1" Key="a1f03129-731f-484d-ac3a-9baa7a3e2323" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="0" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="Elevator" Key="3d68894c-1d4f-4c22-b371-e2acdf3915ca">
+      <Position X="269" Y="33" Z="224" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_Elevator_OM_Binary_NAME">
+      <GroupIO Description="Roll">
+        <BinaryOutput Name="Elevator 0 (+)" Address="27" Key="86060f16-d642-4f46-bd40-14a77f490c26" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Reverse">
+        <BinaryOutput Name="Elevator 0 (-)" Address="28" Key="04bd5f68-499f-4b18-bd93-fc87ea6c9810" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="enterSensor">
+        <BinaryInput Name="Elevator 0 (Left Limit)" Address="18" Key="7573aa28-ab44-4090-b7f4-fbe7f78f560f" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="exitSensor">
+        <BinaryInput Name="Elevator 0 (Right Limit)" Address="19" Key="3d428b4c-c789-48f2-9f0f-e0e2e4fbb82a" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="Platform">
+        <BinaryOutput Name="Elevator 0 (Down)" Address="29" Key="61093c3e-6242-41d7-ba13-e63af6e10378" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Elevator 0 (Slow)" Address="30" Key="4e873afe-38ba-402a-ae71-1580f773334e" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+        <BinaryOutput Name="Elevator 0 (Up)" Address="31" Key="2ae7ee48-c199-403d-984a-57b2e5460e32" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Object Locked="False" GroupKey="00000000-0000-0000-0000-000000000000">
+    <Proxy PrefabName="PickNPlace" Key="a2a33885-61ff-409a-98ed-cb0b5c28f380">
+      <Position X="377" Y="11" Z="175" />
+      <Rotation X="0" Y="0" Z="0" W="1" />
+      <FineRotation>0</FineRotation>
+      <FinePosition>0</FinePosition>
+      <Forward X="0" Y="0" Z="1" />
+      <Up X="0" Y="1" Z="0" />
+      <Right X="1" Y="0" Z="0" />
+    </Proxy>
+    <ComponentIO Index="0" CurrentOperatingMode="0" />
+    <OperatingMode Description="$C_PickNPlace_OM_Binary_NAME">
+      <GroupIO Description="moveBeam">
+        <BinaryOutput Name="Pick &amp; Place 0 Y(+)" Address="32" Key="7138faef-d063-4b22-9fd3-207a913a8f79" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reverseBeam">
+        <BinaryOutput Name="Pick &amp; Place 0 Y(-)" Address="33" Key="4b5e063d-723d-4c1f-94ad-a541579abf25" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="movePicker">
+        <BinaryOutput Name="Pick &amp; Place 0 Z(-)" Address="34" Key="740673af-8d86-465a-a8ea-8f547e0b78de" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reversePicker">
+        <BinaryOutput Name="Pick &amp; Place 0 Z(+)" Address="35" Key="00238c7e-96b5-4f7b-9773-774bb8b1251d" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="moveHead">
+        <BinaryOutput Name="Pick &amp; Place 0 X(+)" Address="36" Key="10df5820-3c8e-44a9-ac37-c83a756dde1e" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="reverseHead">
+        <BinaryOutput Name="Pick &amp; Place 0 X(-)" Address="37" Key="89e46603-f0c2-4cf5-9629-ab8bd8f8b3fd" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="turnGripper">
+        <BinaryOutput Name="Pick &amp; Place 0 C(+)" Address="38" Key="19595454-c231-4088-ac57-9381b54c41b8" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="grab">
+        <BinaryOutput Name="Pick &amp; Place 0 (Grab)" Address="39" Key="4d32ebc3-ad28-42dd-9ba7-48def7aaca34" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="boxDetected">
+        <BinaryInput Name="Pick &amp; Place 0 (Box Detected)" Address="20" Key="0cf73d6a-de5e-4274-8aaa-ecfee9a79bb3" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="gripperLimit">
+        <BinaryInput Name="Pick &amp; Place 0 (C Limit)" Address="21" Key="5c38665d-d3fe-4fbf-94a7-d7cfe30fd2e1" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="MovingVertically">
+        <BinaryInput Name="Pick &amp; Place 0 (Moving-Z)" Address="22" Key="00a36ce8-000f-41ec-99f3-6b4fcc74de96" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+      <GroupIO Description="MovingHorizontally">
+        <BinaryInput Name="Pick &amp; Place 0 (Moving-XY)" Address="23" Key="255103b3-d2a3-4f87-bc18-e3700c51a62a" OpenCircuit="False" ShortCircuit="False" UseForcedValue="False" ForcedValue="False" />
+      </GroupIO>
+    </OperatingMode>
+  </Object>
+  <Instructor Password="" LockCurrentParts="False" RunModeOnly="False" HideFailures="False" />
+  <Drivers CurrentDriver="16384" RunInputKey="1c6d4043-4ecc-4946-a0b4-3e0dd35962ae" PauseInputKey="37a8b0a0-76ca-4bd8-9ab4-c8698416cd09" ResetInputKey="2e2113ab-73ed-4ee1-b5ed-d0a9cdd60b59" TimeScaleInputKey="6b88f411-e650-43fe-90c6-0ea74ada76ce" RunOutputKey="7754fab1-ed21-4fca-9ab9-45e844cd4766" PauseOutputKey="41b90af6-25d1-4fa8-aaec-724f79701be1" ResetOutputKey="01936c60-0201-4d54-aad2-0734eb391d35" CameraIndexOutputKey="f0855715-c7e4-48b3-8174-0fc06299798c">
+    <Advantech4750>
+      <PointIOCount BitInputCount="16" BitOutputCount="16" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BoardCount="1">
+        <Board InvertBitInputs="False" InvertBitOutputs="False" />
+      </Properties>
+    </Advantech4750>
+    <Advantech4704>
+      <PointIOCount BitInputCount="0" BitOutputCount="0" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BoardCount="0" />
+    </Advantech4704>
+    <AllenBradleyLogix5000>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BitInputPrefix="BOOL_IN_" BitOutputPrefix="BOOL_OUT_" FloatInputPrefix="FLOAT_IN_" FloatOutputPrefix="FLOAT_OUT_" IntInputPrefix="INT_IN_" IntOutputPrefix="INT_OUT_" />
+    </AllenBradleyLogix5000>
+    <AllenBradleyMicro800>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BitInputPrefix="BOOL_IN_" BitOutputPrefix="BOOL_OUT_" FloatInputPrefix="FLOAT_IN_" FloatOutputPrefix="FLOAT_OUT_" IntInputPrefix="INT_IN_" IntOutputPrefix="INT_OUT_" />
+    </AllenBradleyMicro800>
+    <AllenBradleyMicroLogix>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="4" IntInputOffset="0" IntOutputOffset="4" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BitInputPrefix="B3:" BitOutputPrefix="O:0." FloatInputPrefix="F8:" FloatOutputPrefix="F8:" IntInputPrefix="N7:" IntOutputPrefix="N7:" />
+    </AllenBradleyMicroLogix>
+    <AllenBradleySLC5>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="4" IntInputOffset="0" IntOutputOffset="4" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties BitInputPrefix="B3:" BitOutputPrefix="O:2." FloatInputPrefix="F8:" FloatOutputPrefix="F8:" IntInputPrefix="N7:" IntOutputPrefix="N7:" />
+    </AllenBradleySLC5>
+    <Automgen>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="200" NumericOutputOffset="300" />
+      <Properties ScaleFactor="100" />
+    </Automgen>
+    <ControlIO />
+    <MHJ>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="100" NumericOutputOffset="100" />
+    </MHJ>
+    <ModbusTCPClient>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties ReadCoils="False" ReadHoldingRegisters="False" ScaleFactor="100" />
+    </ModbusTCPClient>
+    <ModbusTCPServer>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="0" NumericOutputOffset="0" />
+      <Properties ReadInputDiscretes="False" WriteCoils="False" ReadInputRegisters="False" WriteHoldingRegisters="False" ScaleFactor="100" />
+    </ModbusTCPServer>
+    <OPCClientDA>
+      <Server Url="opc.tcp://127.0.0.1:4840/" Name="eUAServer@127.0.0.1 (UA)" ItemCount="0" MaxItemCount="32" StartsWithFilter="IO_" ContainsFilter="" />
+    </OPCClientDA>
+    <SiemensLOGOTCP>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="200" NumericOutputOffset="0" />
+      <LOGOProperties WriteDiscreteToVM="False" WriteNumericToVM="False" ScaleFactor="100" />
+    </SiemensLOGOTCP>
+    <SiemensS7300S7400TCP>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="200" NumericOutputOffset="4" />
+      <S7Properties UseWords="False" />
+      <S7-200Properties WriteDiscreteToVM="False" WriteNumericToVM="False" />
+    </SiemensS7300S7400TCP>
+    <SiemensS71200S71500TCP>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="100" NumericOutputOffset="100" />
+      <S7Properties UseWords="False" />
+    </SiemensS71200S71500TCP>
+    <SiemensS7PLCSIM>
+      <PointIOCount BitInputCount="3" BitOutputCount="1" FloatInputCount="0" FloatOutputCount="0" IntInputCount="0" IntOutputCount="0" NumericInputCount="0" NumericOutputCount="0" />
+      <PointIOOffset BitInputOffset="0" BitOutputOffset="0" FloatInputOffset="0" FloatOutputOffset="0" IntInputOffset="0" IntOutputOffset="0" NumericInputOffset="30" NumericOutputOffset="30" />
+      <Properties UseWords="False" InstanceName="factoryio" />
+    </SiemensS7PLCSIM>
+  </Drivers>
+  <Screenshot Data="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" />
+</FactoryIO>
